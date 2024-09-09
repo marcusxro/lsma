@@ -1,11 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import musicSrc from '../src/assets/cancion parararitururaparararira _ Turnaround Reprise - El Principito _ Tiktok Song (Best part).mp3'
 import { useBooleanContext } from './ContextAPI'
 
 const Song = () => {
     const audioRef = useRef<HTMLAudioElement>(null)
 
-    const { value, toggleValue } = useBooleanContext();
+    const { value,  } = useBooleanContext();
 
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const Song = () => {
 
 
 
-    
+     
   return (
     <audio ref={audioRef} src={musicSrc} />
   )

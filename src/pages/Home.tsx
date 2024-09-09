@@ -9,7 +9,7 @@ import { useBooleanContext } from '../ContextAPI';
 const Home: React.FC = () => {
     const btnEl = useRef(null)
     const btnYes = useRef(null)
-    const { value, toggleValue } = useBooleanContext();
+    const {  toggleValue } = useBooleanContext();
 
     function mininizeBtn() {
         const currentScale = gsap.getProperty(btnEl.current, "scale") as number;
