@@ -9,6 +9,8 @@ const NxtPage:React.FC = () => {
             delay: 1.6
         })
     }, [])
+
+    
   return (
     <div className='bg'>
         <h1>I love you my Parararitururaparararira💗✨</h1>
